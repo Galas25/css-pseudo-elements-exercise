@@ -1,0 +1,92 @@
+.container-md{
+margin-top: 2vh;
+   /* border: 1px solid rgba(43, 48, 53,1); */
+   border-radius: 10px;
+   background-color: white;
+   
+}
+body{
+    background-color: rgb(238, 238, 238);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+p{
+    margin-bottom: 0;
+}
+.container-md p{
+    padding: 1vh;
+}
+footer{
+    height: 8vh;
+    background-color: rgba(43, 48, 53,1);
+    bottom: 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+footer p{
+    color: white;
+    
+    margin-top: 1.5VH;
+}
+img{
+    display: inline-block;
+    width: 5%;
+    height: auto;
+    border-radius: 50px;
+}
+li.nav-item:hover{
+    border-bottom: 2px solid grey;
+}
+button{
+    margin: 1vh;
+}
+
+
+.container-md p::before {
+    content: "ℹ️INFOℹ️";
+    display: block;
+    width: 100%; /* Adjust width as needed */
+    /* height: 20px; Adjust height as needed */
+    /* background-color: #f00; Your desired color */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    border-bottom: 1px black solid;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.container-md p::after {
+    content: "";
+    display: block;
+    width: 100%; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+/* 
+    margin-bottom: 10px; Adjust spacing as needed */
+    border-bottom: 1px black solid;
+}
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust height as needed */
+    background-color: #454545; /* Your desired color */
+}
+button.btn-primary::before {
+    content: "🖱️";
+    display: inline-block;
+    width: 15px; /* Adjust width as needed */
+    height: 10px; /* Adjust height as needed */
+    margin-right: 5px; /* Adjust spacing as needed */
+}
+button.btn-primary::after {
+    content: "🖱️";
+    display: inline-block;
+    width: 15px; /* Adjust width as needed */
+    height: 10px; /* Adjust height as needed */
+
+    margin-left: 5px; /* Adjust spacing as needed */
+}
